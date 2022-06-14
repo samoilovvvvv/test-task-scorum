@@ -1,0 +1,51 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+//        "eslint:recommended",
+//        "plugin:react/recommended"
+          "airbnb",
+          "airbnb/hooks"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "eol-last": ["error", "never"],
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-one-expression-per-line": ["off"],
+        "react/function-component-definition": [2, {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+        }],
+        "import/extensions": ["error", "ignorePackages", {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never",
+            "": "never"
+        }],
+        "default-param-last": [0],
+        "import/prefer-default-export": "off",
+        "no-param-reassign": ["error", { "props": false }],
+        "react/prop-types": "off",
+        "react/jsx-curly-brace-presence": "off",
+        "no-unused-vars": "warn",
+        "no-trailing-spaces": "off",
+        "quote": "off",
+        "no-debugger": "off",
+        "dot-notation": "off",
+        "no-useless-computed-key": "off",
+        "no-nested-ternary": "off"
+    }
+}
